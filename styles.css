@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    color:red;
+}
+.moves{
+cursor: pointer;
+    font-size: 100px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+span:hover{
+    display: inline-block;
+    font-weight: bolder;
+    animation:float 1s linear 1;
+    color:greenyellow
+
+}
+@keyframes float{
+
+    0%{
+        text-shadow:20px 30px 30px rgba(red, green, blue, alpha);
+    }
+    50%{
+        text-shadow:20px 30px 30px rgba(red, green, blue, alpha);
+        transform:translateX(100px);
+        transform: rotate(360deg);
+    }
+    100%{
+        text-shadow:20px 30px 30px rgba(red, green, blue, alpha);
+        
+    }
+
+}
+
+span:nth-child(1){
+    animation-delay: 0.5s;
+    
+}
+span:nth-child(2){
+    animation-delay: 1.0s;
+    transform: rotate(-360deg);
+    
+}
+span:nth-child(3){
+    animation-delay: 1.5s;
+   
+}
+span:nth-child(4){
+    animation-delay: 2.0s;
+    transform: rotate(-360deg);
+}
+span:nth-child(5){
+    animation-delay: 2.5s;
+    
+}
+span:nth-child(6){
+    animation-delay: 3.0s;
+    transform: rotate(-360deg);
+}
+.rotate{
+    -webkit-transition: margin-left 5s ease-in;
+   
+    margin-top: 200px;
+    margin-left: 100px;
+    
+}
+.reddy{
+    margin-top: -600px;
+    margin-left: 700px;
+    
+    -webkit-transition: margin-left 5s ease-out;
+    
+
+
+}
+
+.reddy:hover{
+    margin-left: 100px;
+    cursor: pointer;
+   
+    
+}
+
+.rotate:hover{
+    margin-left: 800px;
+    cursor: pointer;
+    
+    
+}
+
+
